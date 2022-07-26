@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица №2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="page-body">
+
+    <header class="header">
+        <div class="page-container">
+            <nav>
+                <ul class="menu-list">
+                    <li class="menu-item"><a class="menu-link" href="../index.html" title="Главная страница">Главная
+                            страница</a></li>
+                    <li class="menu-item"><a class="menu-link" href="table1.html" title="Таблица №1">Таблица
+                            №1</a></li>
+                    <li class="menu-item current"><a class="menu-link" href="table2.html" title="Таблица №2">Таблица
+                            №2</a></li>
+                    <li class="menu-item"><a class="menu-link" href="mondrian-table.html"
+                            title="Таблица Мондриана">Таблица
+                            Мондриана</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="page-container">
+        <table class="table second-table">
+            <caption class="main-table-caption">
+                <h1 class="table-headline main-headline">Таблица №2</h1>
+            </caption>
+            <tbody>
+                <tr>
+                    <td class="table-cell" colspan="2">
+                        <p class="cell-paragraph">1-2</p>
+                    </td>
+
+                    <td class="table-cell cell-width-60">
+                        <p class="cell-paragraph">3</p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table-cell cell-width-28">
+                        <p class="cell-paragraph">4</p>
+                    </td>
+
+                    <td class="table-cell " rowspan="2" colspan="2">
+
+                        <table class="table child-table">
+                            <caption class="child-table-caption">
+                                <h2 class="table-headline child-headline">Вложенная таблица</h2>
+                            </caption>
+                            <tbody>
+
+                                <tr>
+                                    <td class="table-cell cell-width-33">
+                                        <p class="cell-paragraph">1</p>
+                                    </td>
+                                    <td class="table-cell cell-width-33" rowspan="3">
+                                        <p class="cell-paragraph">2-5-8</p>
+                                    </td>
+                                    <td class="table-cell cell-width-33 cell-height-200" rowspan="2">
+                                        <p class="cell-paragraph">3-6</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="table-cell cell-height-200" rowspan="2">
+                                        <p class="cell-paragraph">4-7</p>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="table-cell">
+                                        <p class="cell-paragraph">9</p>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="table-cell">
+                        <p class="cell-paragraph">7</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
